@@ -1,0 +1,58 @@
+{% extends "Authority/base.html" %}
+{% block content %}
+<style>
+    #customers {
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    #customers td, #customers th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #customers tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #customers tr:hover {background-color: #ddd;}
+    
+    #customers th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #4CAF50;
+      color: white;
+    }
+    </style>
+
+
+<table id="customers">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Experiences (Year)</th>
+        <th>Number</th>
+        <th>Total Skills</th>
+        <th>Skills Score</th>
+        <th>Skills & Exp Score</th>
+
+    </tr>
+
+    {% for candidate in candidates %}
+
+    <tr>
+      <td>{{candidate.name}}</td>
+      <td>{{candidate.email}}</td>
+      <td>{{candidate.total_experiences}}</td>
+      <td>{{candidate.phone}}</td>
+      <td>{{candidate.total_skills}}</td>
+      <td>{{candidate.skills_score}}</td>
+      <td>{{candidate.experiences_skills_combined_score}}</td>
+    </tr>
+
+    {% endfor %}
+
+  </table>
+
+
+{% endblock content %}

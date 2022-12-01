@@ -1,0 +1,36 @@
+{% extends 'Candidate/authentication_base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<html>
+<head>
+
+</head>
+<body>
+    <div class="container mt-3">
+    <div class="usersignupform p-3" id="design">
+
+        <div class="bg-info mb-3" style="padding: 0.5px;"></div>
+        <div id="">
+            <form class="site-form" action="{% url 'Candidate:registration' %}" method="post">
+            {% csrf_token %}
+            {{ signform|crispy }}
+            <input type="submit" value="Signup" class="btn-sm app-btn-secondary">
+            </form>
+            <span><a href="{% url 'Candidate:login' %}" class="text-secondary" style="font-size:13px">Back to login</a></span>
+            <div class="mt-3">
+                {% if message %}
+                {% if msgtype == "successful" %}
+                <p class="alert alert-warning" id="alert-style">{{ message }}</p>
+                {% else %}
+                <p class="alert alert-danger" id="alert-style">{{ message }} and try again</p>
+                {% endif %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+{% endblock %}

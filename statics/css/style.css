@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+    font-family: 'Teko', sans-serif;
+    background-color: #a6f6ea ;
+}
+.quizpage{
+  width: 70%;
+  height: 2200px;
+ background-color: cyan;
+  padding-top: 3px;
+  margin-left: 210px;
+  color: black;
+
+}
+p{
+  margin-left: 10px;
+  font-size: 20px;
+  font: bold;
+}
+input{
+  margin-left: 13px;
+
+}
+
+h2{
+  padding-top: 10 px;
+  font-size: 26px;
+  padding-left: 240px;
+  font:bold;
+  margin-left: 20px;
+}
+button{
+    margin-left: 50px;
+    width: 100px;
+    height: 40px;
+    font-size: 22px;
+}
+button:hover{
+  background-color: cyan;
+}
+.question{
+font-size: 18px;
+
+}
+#aftarSubmit{
+
+width: 280px;
+height: 40px;
+margin-left: 179px;
+padding-top: 0px;
+font-size: 30px;
+}

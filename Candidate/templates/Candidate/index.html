@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>cv sorting</title>
+      <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+      {% load static %}
+        <link rel="stylesheet" href="{%static 'css/style.css'%}">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous" defer></script>
+    <script src="{%static 'js/main.js'%}" defer></script>
+  </head>
+  <body>
+    {% block content %}
+    <div class="header">
+
+  </div>
+  <div class="quizpage">
+    <h2>Personal Assesment</h2><br><br>
+
+    <h4>Solve the question:</h4><br><br>
+    <div class="question">
+
+      <form id="quiz" name="quiz">
+        <p>1. Which of the following is a non functional requirement of a web based application?</p><br>
+        <input type="radio"  name="ques1" value="1"> When the user clicks a "read me" link, the color of the link should change from blue to pink <br>
+        <input type="radio"  name="ques1" value="2"> When the user clicks a "read me" link, the next page should be opend within 5 seconds <br>
+        <input type="radio"  name="ques1" value="3"> When the user clicks a "read me" link, the mouse over should show the target page title in a tool tip <br>
+        <input type="radio"  name="ques1" value="4"> When the user clicks a "read me" link, the read me page should load successfully without errors<br><br><br>
+
+        <p>2. A scrum is actually a</p><br>
+        <input type="radio"  name="ques2" value="1"> software process model which is agile in nature <br>
+        <input type="radio"  name="ques2" value="2"> None of the above <br>
+        <input type="radio" name="ques2" value="4"> team pack in rugby where everyone in the pack act together to move the ball down the field <br><br><br>
+
+
+        <p>3.  ___________ enhances performance and functionality of the software after delivery</p><br>
+        <input type="radio"  name="ques3" value="1"> re-design <br>
+        <input type="radio"  name="ques3" value="2"> re-engineering <br>
+        <input type="radio" name="ques3" value="3"> re-maintenance <br>
+        <input type="radio"  name="ques3" value="4"> re-post checking <br><br><br>
+
+
+
+
+
+
+        <p>4. Which of the following is not a design tool?</p><br>
+        <input type="radio"  name="ques4" value="1"> Simple SUMI<br>
+        <input type="radio"  name="ques4" value="2"> Rational Rose <br>
+        <input type="radio"  name="ques4" value="3"> Rhapsody <br>
+        <input type="radio"  name="ques4" value="4"> Rational Robot <br><br><br>
+
+        <p>5. Backtracking is not possible in the iterative and incremental development approach.</p><br>
+        <input type="radio"  name="ques5" value="1"> True<br>
+        <input type="radio" name="ques5" value="2"> False <br><br><br>
+
+
+
+        <p>6. XP with reference to software development methodology is</p><br>
+        <input type="radio"  name="ques6" value="1"> Excellent programming <br>
+        <input type="radio"  name="ques6" value="2"> Extreme processing <br>
+        <input type="radio"  name="ques6" value="3"> Extreme programming <br>
+        <input type="radio"  name="ques6" value="4"> Excellent processing<br><br><br>
+
+
+
+
+
+        <p>7. CMMi has an iterative lifecycle when compared to CMM.</p><br>
+        <input type="radio"  name="ques7" value="1"> True <br>
+        <input type="radio"  name="ques7" value="2"> False <br><br><br>
+
+        <p>8. CMM is</p><br>
+        <input type="radio"  name="ques8" value="1"> Company maturity model<br>
+        <input type="radio"  name="ques8" value="2"> Capability maturity model<br>
+        <input type="radio" name="ques8" value="3"> Configuration maturity model<br>
+        <input type="radio"  name="ques8" value="4"> Company management model <br><br><br>
+
+
+
+        <p>9.  Which of the following is not a graphical modelling language for software design?</p><br>
+        <input type="radio"  name="ques9" value="1"> UML <br>
+        <input type="radio"  name="ques9" value="2"> DML<br>
+        <input type="radio"  name="ques9" value="3"> EEML<br>
+        <input type="radio"  name="ques9" value="4"> SysML<br><br><br>
+
+        <p>10. Post implementation review is</p><br>
+        <input type="radio"  name="ques10" value="1"> reviewing the risk baseline <br>
+        <input type="radio" name="ques10" value="2"> reviewing the traceability matrix<br>
+        <input type="radio"  name="ques10" value="3"> reviewing the impact on customers<br>
+        <input type="radio"  name="ques10" value="4"> None of the above <br><br>
+
+
+
+
+
+
+      </form>
+      <button id="button" onclick="">Submit</button>
+        <div id="aftarSubmit">
+          <p id="message"></p>
+          <p id="curretNumber"></p>
+
+        </div>
+
+
+    </div>
+
+  </div>
+ {% endblock %}
+  </body>
+</html>
